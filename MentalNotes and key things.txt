@@ -1,0 +1,42 @@
+Not going to use pip lol using uv, command to install it since i wiped my pc like a month ago lol
+
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+To create a new project:
+
+uv init projectname -> this creates a folder
+cd projectname
+
+initialize
+uv init
+
+We will be using python 3.12.7
+PostgreSQL 18.3
+Dbeaver to manage postgre
+
+------------------------------------------
+PROJECT DESCRIPTION
+------------------------------------------
+Essentially the goal of this project is to put in practice some of my knowledge in postgre python and a couple other tools
+
+The goal is to transform the dataset downloaded and transform the data within the dataset into a dashboard using python
+We will look after game gender
+AVG price 
+Positive reviews
+
+based on that we will create an etl within python using the data coming from either the csv or the database itself(will check this later on) 
+and then utilize dbt to orchestrate it
+then use metabase, if need we can build a container just in case but will see
+
+Python will be in charge of managing the etl, so within python I think of following a clean but easy structure, I won't follow all the rules of oop since this is a project that falls on the small end
+
+I essentially need a file where i configure the conection to the db and where i extract the csv, to then pass it where it is needed
+
+
+
+
+
+
+
+
+
