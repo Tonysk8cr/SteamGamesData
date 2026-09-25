@@ -33,6 +33,36 @@ Python will be in charge of managing the etl, so within python I think of follow
 I essentially need a file where i configure the conection to the db and where i extract the csv, to then pass it where it is needed
 
 
+Not going to use all columns, though it could be usefull, it could end up being a waste of resources, so based on the dashboard that we will create i'll only use:
+AppID
+Name
+Release Date
+Price
+Genres (Returns an array with 1 or more, or empty if not specified, due to this we won't check if the array is empty)
+Positive
+Negative
+Recommendations
+Developers
+Publishers
+
+
+
+
+
+EXTRACT:
+Duties:
+-Read csv
+-Make sure it exists
+-Check  min columns
+-Turn into dataframe
+-Logs
+
+
+Constrains - 
+- PK cannot be empty or null
+
+
+
 
 
 
